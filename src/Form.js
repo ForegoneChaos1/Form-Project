@@ -73,7 +73,7 @@ const Form = () => {
             ) : (   
         <section>
             <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
-            <h1>Form</h1>
+            <h1>Sign Up</h1>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="username">
                     Username:
@@ -158,7 +158,7 @@ const Form = () => {
                 <button disabled={!validName || !validPwd || !validMatch ? true : false}>Sign Up</button>
             </form>
             <p>
-                Already registeres?<br />
+                Already registered?<br />
                 <span className="line">
                     {/*put router link here*/}
                     <a href="#">Sign In</a>
